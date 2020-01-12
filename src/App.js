@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable react/no-children-prop */
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Show from './components/Show';
+import Episodes from './components/Episodes';
+import { showUrl, episodeUrl } from './constants';
+import Spinner from './components/Spinner';
+import './styles/styles.scss';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [show, setShow] = useState();
+  const [episodes, setEpisodes] = useState();
+
+  useEffect(() => {
+    axios.get(showUrl).then((data) => {
+      setShow(data.data);
+    });
+    axios.get(episodeUrl).then((data) => {
+      setEpisodes(data.data);
+    });
+  }, []);
+  return show && episodes ? (
+    <BrowserRouter>
+      <div>
+        <Switch>
+          <Route exact path="/" children={<Show show={show} episodes={episodes} />} />
+          <Route path="/episodes/:id" children={<Episodes show={show} episodes={episodes} />} />
+        </Switch>
+      </div>
+    </BrowserRouter>
+  ) : (<Spinner />);
 }
 
 export default App;

@@ -1,0 +1,63 @@
+@import "mixins";
+@import "loading";
+
+body {
+  @include center-item;
+  font-family: "Oswald", sans-serif;
+  color: rgb(58, 58, 58);
+}
+
+.title {
+  @include center-item;
+  margin: 50px;
+}
+
+.content {
+  width: 700px;
+  @media screen and (max-width: 750px){
+    @include center-item;
+    width: 300px;
+  }
+  margin: auto;
+  img {
+    margin-top: 20px;
+    width: 230px;
+  }
+
+  .info {
+    width: 450px;
+    float: right;
+    @media screen and (max-width: 750px){
+      width: 300px;
+      float: none;
+      margin: auto;
+
+    }
+    .summary{
+      font-size: 15px;
+    }
+  }
+}
+
+.episodeList {
+  .link {
+    text-decoration: inherit;
+    button{
+      @media screen and (max-width: 750px){
+        @include center-item;
+      }
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      height: auto;
+      text-align: center;
+    }
+    button:hover {
+      color: rgb(114, 114, 114);
+    }
+    button:focus {
+      outline: none;
+    }
+  }
+ }
+
