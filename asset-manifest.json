@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ThePowerPuffGirls/static/css/main.a7867567.chunk.css",
+    "main.js": "/ThePowerPuffGirls/static/js/main.da0905a3.chunk.js",
+    "main.js.map": "/ThePowerPuffGirls/static/js/main.da0905a3.chunk.js.map",
+    "runtime-main.js": "/ThePowerPuffGirls/static/js/runtime-main.74d6af30.js",
+    "runtime-main.js.map": "/ThePowerPuffGirls/static/js/runtime-main.74d6af30.js.map",
+    "static/js/2.aa6d3cb7.chunk.js": "/ThePowerPuffGirls/static/js/2.aa6d3cb7.chunk.js",
+    "static/js/2.aa6d3cb7.chunk.js.map": "/ThePowerPuffGirls/static/js/2.aa6d3cb7.chunk.js.map",
+    "index.html": "/ThePowerPuffGirls/index.html",
+    "precache-manifest.704dd0c455db7aa89fc14cccbe54ccc9.js": "/ThePowerPuffGirls/precache-manifest.704dd0c455db7aa89fc14cccbe54ccc9.js",
+    "service-worker.js": "/ThePowerPuffGirls/service-worker.js",
+    "static/css/main.a7867567.chunk.css.map": "/ThePowerPuffGirls/static/css/main.a7867567.chunk.css.map",
+    "static/js/2.aa6d3cb7.chunk.js.LICENSE": "/ThePowerPuffGirls/static/js/2.aa6d3cb7.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.74d6af30.js",
+    "static/js/2.aa6d3cb7.chunk.js",
+    "static/css/main.a7867567.chunk.css",
+    "static/js/main.da0905a3.chunk.js"
+  ]
+}
