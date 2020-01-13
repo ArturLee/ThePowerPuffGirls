@@ -1,6 +1,5 @@
 ## Powerpuff Girls - React
 
-Live version available @ 
 This project is a coding challange for Front-end job position. 
 
 ## The goal 
