@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ThePowerPuffGirls/precache-manifest.3230bb63c425a302b6f8853def5802dd.js"
+  "/ThePowerPuffGirls/precache-manifest.fba3e5089a6af905132cf355bd199558.js"
 );
 
 self.addEventListener('message', (event) => {
